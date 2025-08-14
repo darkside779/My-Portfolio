@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK-Projects</title>
+    <!-- Favicon with consistent blue color -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='58%' font-family='Poppins, sans-serif' font-size='60' font-weight='bold' text-anchor='middle' dominant-baseline='middle' fill='%232563eb'>AK</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Three.js -->
+    <script src="https://unpkg.com/three@0.132.2/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/redirect.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-orbs">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bg-lines"></div>
+        <div class="orb-particles">
+            <!-- Left orb particles -->
+            <div class="particle small particle-1"></div>
+            <div class="particle medium particle-2"></div>
+            <div class="particle small particle-3"></div>
+            <div class="particle large particle-4"></div>
+            <div class="particle medium particle-5"></div>
+            
+            <!-- Right orb particles -->
+            <div class="particle medium particle-6"></div>
+            <div class="particle small particle-7"></div>
+            <div class="particle large particle-8"></div>
+            <div class="particle medium particle-9"></div>
+            <div class="particle small particle-10"></div>
+            
+            <!-- Connecting lines -->
+            <div class="particle line" style="top: 20%; left: 30%;"></div>
+            <div class="particle line" style="top: 35%; right: 35%;"></div>
+            <div class="particle line" style="top: 60%; left: 35%;"></div>
+            <div class="particle line" style="bottom: 25%; right: 40%;"></div>
+            
+            <!-- Additional background particles -->
+            <div class="particle particle-11"></div>
+            <div class="particle particle-12"></div>
+            <div class="particle particle-13"></div>
+            <div class="particle particle-14"></div>
+            <div class="particle particle-15"></div>
+            <div class="particle particle-16"></div>
+            <div class="particle particle-17"></div>
+            <div class="particle particle-18"></div>
+            <div class="particle particle-19"></div>
+            <div class="particle particle-20"></div>
+            <div class="particle particle-21"></div>
+            <div class="particle particle-22"></div>
+            
+            <!-- Tiny dots will be added here by JavaScript -->
+            <div id="tiny-dots-container"></div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">AK</div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="projects.html" class="active">Projects</a></li>
+                            <li><a href="index.html#contact">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Menu toggle will be added here by JavaScript for mobile -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="all-projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">All Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" id="server-log-analysis">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/sla/dashboard1.png" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Server Log Analysis</h3>
+                            <p>Server Log Analysis is a web application that allows users to analyze and visualize server logs in real-time.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>SQLAlchemy</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/akm323/server-log-analysis" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                                <button class="btn btn-small btn-outline toggle-expand">Show More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-expanded">
+                        <div class="project-gallery">
+                            <div class="gallery-main">
+                                <img src="images/projects/sla/dashboard1.png" alt="Dashboard 1" class="active" data-ratio="wide">
+                            </div>
+                            <div class="gallery-thumbnails">
+                                <button class="gallery-nav-arrow prev" aria-label="Previous">❮</button>
+                                <div class="gallery-thumbnails-container">
+                                    <img src="images/projects/sla/sla_login.png" alt="login" class="active">
+                                    <img src="images/projects/sla/dashboard1.png" alt="Dashboard 1" data-ratio="wide">
+                                    <img src="images/projects/sla/dashboard2.png" alt="Dashboard 2" data-ratio="wide">
+                                    <img src="images/projects/sla/dashboard3.png" alt="Dashboard 3" data-ratio="wide">
+                                    <img src="images/projects/sla/dashboard4.png" alt="Dashboard 4" data-ratio="wide">
+                                    <img src="images/projects/sla/dashboard5.png" alt="Dashboard 5" data-ratio="wide">
+                                    <img src="images/projects/sla/main_screen.png" alt="Main Screen">
+                                    <img src="images/projects/sla/trackip_screen.png" alt="Track IP Screen">
+                                    <img src="images/projects/sla/trackurl_screen.png" alt="Track URL Screen">
+                                    <img src="images/projects/sla/manage_users.png" alt="Manage Users">
+                                </div>
+                                <button class="gallery-nav-arrow next" aria-label="Next">❯</button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Server Log Analysis</h3>
+                            <p>Server Log Analysis is a comprehensive web application designed to help system administrators and developers monitor and analyze server logs in real-time. The application provides powerful visualization tools and analytics to identify patterns, troubleshoot issues, and optimize server performance.</p>
+                            <h4>Features:</h4>
+                            <ul>
+                                <li>Real-time log monitoring and analysis</li>
+                                <li>Interactive dashboards with customizable widgets</li>
+                                <li>Advanced search and filtering capabilities</li>
+                                <li>User authentication and role-based access control</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>SQLAlchemy</span>
+                                <span>JavaScript</span>
+                                <span>Plotly</span>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/akm323/server-log-analysis" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+                                <button class="btn btn-small btn-outline toggle-expand">Show Less</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" id="schoolsys">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/schoolsys/class_cover.avif" alt="School App - Integrated with Management">
+                        </div>
+                        <div class="project-info">
+                            <h3>School App - Integrated with Management System</h3>
+                            <p>A comprehensive system with applications for parents and teachers.</p>
+                            <div class="project-tech">
+                                <span>Dart</span>
+                                <span>Flutter</span>
+                                <span>Laravel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">Private</a>
+                                <button class="btn btn-small btn-outline toggle-expand">Show More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-expanded">
+                        <div class="project-gallery">
+                            <div class="gallery-main">
+                                <img src="images/projects/schoolsys/parent_home.png" alt="Parent Home" class="active">
+                            </div>
+                            <div class="gallery-thumbnails">
+                                <button class="gallery-nav-arrow prev" aria-label="Previous">❮</button>
+                                <div class="gallery-thumbnails-container">
+                                    <img src="images/projects/schoolsys/parent_home.png" alt="Parent Home" class="active">
+                                    <img src="images/projects/schoolsys/class_timetable.png" alt="Class Timetable">
+                                    <img src="images/projects/schoolsys/exam_timetable.png" alt="Exam Timetable">
+                                    <img src="images/projects/schoolsys/payment.png" alt="Payment">
+                                    <img src="images/projects/schoolsys/attendance.png" alt="Attendance">
+                                    <img src="images/projects/schoolsys/grades.png" alt="Grades">
+                                    <img src="images/projects/schoolsys/parent_calendar2.png" alt="Calendar">
+                                    <img src="images/projects/schoolsys/parent_calendar3.png" alt="Calendar2">
+                                    <img src="images/projects/schoolsys/parent_settings.png" alt="Settings">
+                                    <img src="images/projects/schoolsys/teacher_home.png" alt="Teacher Home">
+                                </div>
+                                <button class="gallery-nav-arrow next" aria-label="Next">❯</button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>School App - Integrated with Management System</h3>
+                            <p>A comprehensive school management solution with dedicated Flutter applications for parents and teachers, connected to a robust Laravel backend. The platform provides real-time access to academic information, schedules, and communication tools.</p>
+                            <h4>Parent Application:</h4>
+                            <ul>
+                                <li>Real-time grade tracking with visual indicators and performance analysis</li>
+                                <li>Interactive timetable with color-coded subjects and visual timeline</li>
+                                <li>Payment system with balance tracking and transaction history</li>
+                                <li>Direct messaging with teachers and school announcements</li>
+                            </ul>
+
+                            <h4>Teacher Application:</h4>
+                            <ul>
+                                <li>Class management with attendance tracking and student monitoring</li>
+                                <li>Exam scheduling, proctoring, and grade management</li>
+                                <li>Communication tools for parent-teacher messaging and announcements</li>
+                            </ul>
+
+                            <h4>Technical Implementation:</h4>
+                            <ul>
+                                <li>Flutter frontend with Provider state management</li>
+                                <li>Laravel RESTful API with MySQL database</li>
+                                <li>JWT authentication with role-based access control</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Dart</span>
+                                <span>Flutter</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small" target="_blank" rel="noopener noreferrer">Private Source Code</a>
+                                <button class="btn btn-small btn-outline toggle-expand">Show Less</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" id="amaras-curse">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/School system/Dashboard.png" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>School Management System</h3>
+                            <p>School Management System is a web application that allows users to manage school data in real-time. its Private Repository feel free to ask me for more details</p>
+                            <div class="project-tech">
+                                <span>PHP (Laravel)</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/darkside779/SmartSchool" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                                <a href="projects.html#school-management-system" class="btn btn-small btn-outline">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-expanded">
+                        <div class="project-gallery">
+                            <div class="gallery-main">
+                                <img src="images/projects/School system/Dashboard.png" alt="Dashboard" class="active">
+                            </div>
+                            <div class="gallery-thumbnails">
+                                <button class="gallery-nav-arrow prev" aria-label="Previous">❮</button>
+                                <div class="gallery-thumbnails-container">
+                                    <img src="images/projects/School system/Dashboard.png" alt="Dashboard" class="active">
+                                    <img src="images/projects/School system/Attend.png" alt="Attendance Screen">
+                                    <img src="images/projects/School system/Exam.png" alt="Exam Screen">
+                                    <img src="images/projects/School system/Marks.png" alt="Marks Screen">
+                                    <img src="images/projects/School system/marksheet.png" alt="Marksheet Screen">
+                                </div>
+                                <button class="gallery-nav-arrow next" aria-label="Next">❯</button>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>School Management System</h3>
+                            <p>A comprehensive web-based solution designed for educational institutions, featuring seven distinct user roles with tailored interfaces and permissions to streamline school administration and enhance the educational experience.</p>
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li><strong>Super Admin</strong>: Full system control with record deletion and user account management</li>
+                                <li><strong>Admin</strong>: Comprehensive management of students, classes, sections, exams, grades, and system settings</li>
+                                <li><strong>Accountant</strong>: Handles all financial transactions, fees, and payment receipts</li>
+                                <li><strong>Librarian</strong>: Complete library book management system</li>
+                                <li><strong>Teacher</strong>: Class management, study materials, schedules, and profile maintenance</li>
+                                <li><strong>Student</strong>: Personal portal for marks, timetable, library status, and profile management</li>
+                                <li><strong>Parent</strong>: Access to child's academic progress, timetable, and payment history</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>PHP (Laravel)</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shegzibar/Amara" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+                                <button class="btn btn-small btn-outline toggle-expand">Show Less</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Built and designed by <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">Ahmed Khalid</a>.</p>                          
+                <p>&copy; <span id="current-year"></span> <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">Ahmed Khalid</a>. All rights reserved.</p>
+                <p>3D model by <a href="https://sketchfab.com/Hadrien59" target="_blank" rel="noopener noreferrer" class="footer-link-white">Hadrien59</a> via Sketchfab. Licensed under CC BY.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
