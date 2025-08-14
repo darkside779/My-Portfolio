@@ -1,4 +1,4 @@
-# AK Portfolio
+# Mustafa Portfolio
 
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript. This portfolio showcases my work, skills, and experience as a software engineer.
 
@@ -38,7 +38,6 @@ The 3D model featured in this portfolio was created by [Hadrien59](https://sketc
 
 ## Credits
 
-- **Design & Development**: [Ahmed Khalid](https://github.com/akm323)
 - **3D Model**: [Hadrien59 on Sketchfab](https://sketchfab.com/Hadrien59)
 - **Icons**: [Font Awesome](https://fontawesome.com/)
 - **Fonts**: [Google Fonts](https://fonts.google.com/)
@@ -51,7 +50,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/akm323/ak_portfolio.git
+   git clone https://github.com/darkside779/My-Portfolio.git
    ```
 
 2. Open `index.html` in your preferred web browser.
@@ -62,4 +61,4 @@ For any inquiries or feedback, please feel free to reach out through the contact
 
 ---
 
-Built with ❤️ by [Ahmed Khalid](https://github.com/akm323)
+Built with ❤️ by [Mustafa](https://github.com/darkside779)
